@@ -33,7 +33,7 @@ def main():
 
     if button:
         data = get_data(ticker, start, end)
-        st.title(f"Closing prices for {ticker}")
+        st.header(f"Closing prices for {ticker} {start} to {end}")
         st.line_chart(data)
 
 if __name__ == "__main__":
